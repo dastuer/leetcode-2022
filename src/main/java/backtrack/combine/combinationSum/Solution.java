@@ -1,4 +1,4 @@
-package backtrack.combinationSum;
+package backtrack.combine.combinationSum;
 
 import java.util.ArrayList;
 import java.util.List;

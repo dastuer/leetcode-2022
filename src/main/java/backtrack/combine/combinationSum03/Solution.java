@@ -1,4 +1,4 @@
-package backtrack.combinationSum03;
+package backtrack.combine.combinationSum03;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -33,7 +33,7 @@ public class Solution {
         List<Integer> curr = new ArrayList<>(cur);
         for (int i = start; i < array.length&&sum<target; i++) {
             // 去重 同级别相同数字去掉
-            if (i>0&&array[i]==array[i-1]&& !used[i - 1]){
+            if (i>0&&array[i]==array[i-1]&&!used[i - 1]){
                 continue;
             }
             sum += array[i];

@@ -1,4 +1,4 @@
-package backtrack.restoreIpAddresses;
+package backtrack.combine.restoreIpAddresses;
 
 import java.util.ArrayList;
 import java.util.List;

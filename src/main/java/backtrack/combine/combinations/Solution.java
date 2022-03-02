@@ -1,4 +1,4 @@
-package backtrack.combinations;
+package backtrack.combine.combinations;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,7 +25,8 @@ public class Solution {
         }
         List<Integer> curr = new ArrayList<>(cur);
         for (int i = startIndex; i <= n ; i++) {
-            if ((n-i)+1<(k-curr.size()))return;
+            if ((n-i)+1<(k-curr.size()))
+                return;
             curr.add(i);
             backtracking(result, n, curr, k, i+1);
             curr.remove(curr.size()-1);

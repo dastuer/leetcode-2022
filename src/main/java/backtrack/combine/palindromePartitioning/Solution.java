@@ -1,7 +1,6 @@
-package backtrack.palindromePartitioning;
+package backtrack.combine.palindromePartitioning;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 /**
