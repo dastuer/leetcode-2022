@@ -4,11 +4,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 39. 组合总和
- * 题⽬链接：https://leetcode-cn.com/problems/combination-sum/
- * 给定⼀个⽆重复元素的数组 candidates 和⼀个⽬标数 target ，找出 candidates 中所有可以使数字和为
- * target 的组合。
- * candidates 中的数字可以⽆限制重复被选取。
+ * 131.分割回⽂串
+ * 题⽬链接：https://leetcode-cn.com/problems/palindrome-partitioning/
+ * 给定⼀个字符串 s，将 s 分割成⼀些⼦串，使每个⼦串都是回⽂串。
+ * 返回 s 所有可能的分割⽅案。
+ * ]
  */
 public class Solution {
     public static void main(String[] args) {
