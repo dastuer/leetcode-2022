@@ -1,7 +1,26 @@
-package dp.jumpGame;
+package greedy.jumpGame;
 
+/**
+ * 55. 跳跃游戏
+ * 题⽬链接：https://leetcode-cn.com/problems/jump-game/
+ * 给定⼀个⾮负整数数组，你最初位于数组的第⼀个位置。
+ * 数组中的每个元素代表你在该位置可以跳跃的最⼤⻓度。
+ * 判断你是否能够到达最后⼀个位置。
+ *
+ */
 public class Solution {
-
+    public static void main(String[] args) {
+        Solution solution = new Solution();
+        System.out.println(solution.jump(new int[]{3, 2, 1,0, 4}));
+    }
+    public boolean jump(int[] arr){
+        int maxDistance = 0;
+        for (int i = 0; i < arr.length&&maxDistance < arr.length; i++) {
+            if (maxDistance<i)return false;
+            maxDistance = arr[i]+i;
+        }
+        return true;
+    }
 }
 
 /**

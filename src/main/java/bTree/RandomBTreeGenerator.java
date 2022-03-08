@@ -1,10 +1,7 @@
 package bTree;
 
-import bTree.node.TreeNode;
-
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 import java.util.Random;
 
 public class RandomBTreeGenerator {
@@ -30,7 +27,7 @@ public class RandomBTreeGenerator {
         int len = random.nextInt(5, 10);
         ArrayList<TreeNode> nodes = new ArrayList<>();
         for (int i = 0; i < len; i++) {
-            nodes.add(new TreeNode(random.nextInt(0,10)));
+            nodes.add(new TreeNode(random.nextInt(1,10)));
         }
         return nodes.toArray(new TreeNode[0]);
     }

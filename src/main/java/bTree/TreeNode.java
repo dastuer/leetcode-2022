@@ -1,4 +1,4 @@
-package bTree.node;
+package bTree;
 
 public class TreeNode {
     public int val;
