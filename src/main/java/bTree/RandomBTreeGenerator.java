@@ -22,7 +22,7 @@ public class RandomBTreeGenerator {
         return root;
 
     }
-    public static TreeNode[] randomNodes(){
+    private static TreeNode[] randomNodes(){
         Random random = new Random();
         int len = random.nextInt(5, 10);
         ArrayList<TreeNode> nodes = new ArrayList<>();
