@@ -1,13 +1,13 @@
 package bTree.postorderTraversal;
 
-import bTree.RandomBTreeGenerator;
+import bTree.utils.GenTree;
 import bTree.TreeNode;
 
 import java.util.*;
 
 public class Solution {
     public static void main(String[] args) {
-        TreeNode tree = RandomBTreeGenerator.getTree();
+        TreeNode tree = GenTree.getTree();
         Solution solution = new Solution();
         System.out.println(solution.postorderTraversal(tree));
         System.out.println(solution.postorderTraversal01(tree));
@@ -34,8 +34,10 @@ public class Solution {
             if (top!=null){
                 stack.push(top);
                 stack.push(null);
-                if (top.right!=null)stack.push(top.right);
-                if (top.left!=null)stack.push(top.left);
+                if (top.right!=null)
+                    stack.push(top.right);
+                if (top.left!=null)
+                    stack.push(top.left);
 
             }else {
                 if (!stack.isEmpty()) {

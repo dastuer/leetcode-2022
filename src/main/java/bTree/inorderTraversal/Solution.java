@@ -1,6 +1,6 @@
 package bTree.inorderTraversal;
 
-import bTree.RandomBTreeGenerator;
+import bTree.utils.GenTree;
 import bTree.TreeNode;
 
 import java.util.ArrayList;
@@ -10,7 +10,7 @@ import java.util.Stack;
 public class Solution {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        TreeNode tree = RandomBTreeGenerator.getTree();
+        TreeNode tree = GenTree.getTree();
         System.out.println(solution.inorderTraversal(tree));
         System.out.println(solution.inorderTraversal01(tree));
     }

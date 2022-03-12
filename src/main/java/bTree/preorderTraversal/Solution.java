@@ -1,6 +1,6 @@
 package bTree.preorderTraversal;
 
-import bTree.RandomBTreeGenerator;
+import bTree.utils.GenTree;
 import bTree.TreeNode;
 
 import java.util.ArrayList;
@@ -9,10 +9,10 @@ import java.util.Stack;
 
 public class Solution {
     public static void main(String[] args) {
-        bTree.inorderTraversal.Solution solution = new bTree.inorderTraversal.Solution();
-        TreeNode tree = RandomBTreeGenerator.getTree();
-        System.out.println(solution.inorderTraversal(tree));
-        System.out.println(solution.inorderTraversal01(tree));
+        Solution solution = new Solution();
+        TreeNode tree = GenTree.getTree();
+        System.out.println(solution.preorderTraversal(tree));
+        System.out.println(solution.preorderTraversal01(tree));
     }
     public List<Integer> preorderTraversal(TreeNode root){
         ArrayList<Integer> result = new ArrayList<>();
@@ -39,8 +39,8 @@ public class Solution {
             if (pop!=null){
                 if (pop.right!=null)stack.push(pop.right); // 右
                 if (pop.left!=null)stack.push(pop.left); //  左
-                stack.push(null);
                 stack.push(pop); // 中
+                stack.push(null);
             }else {
                 if (!stack.isEmpty()){
                     TreeNode pop1 = stack.pop();

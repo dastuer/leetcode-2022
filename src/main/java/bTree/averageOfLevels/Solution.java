@@ -1,6 +1,6 @@
 package bTree.averageOfLevels;
 
-import bTree.RandomBTreeGenerator;
+import bTree.utils.GenTree;
 import bTree.TreeNode;
 
 import java.util.ArrayList;
@@ -15,7 +15,7 @@ import java.util.List;
 public class Solution {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        System.out.println(Arrays.toString(solution.averageOfLevels(RandomBTreeGenerator.getTree())));
+        System.out.println(Arrays.toString(solution.averageOfLevels(GenTree.getTree())));
     }
     // 层次优先遍历
     public List<Double> averageOfLevels01(TreeNode root){
